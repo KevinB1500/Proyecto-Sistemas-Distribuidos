@@ -1,0 +1,105 @@
+.align-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.btn-enviar {
+    width: 30%;
+    border-radius: 1rem;
+}
+.n-logo{
+    max-width: 195px;
+}
+
+.hidden{
+    display:none;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn-suggest{
+    width: 15%;
+    border-radius: 1rem;
+}
+
+#previous #next #finish{
+    padding: 5px 10px;
+    border-color: black;
+    border-radius: 1rem;
+    transition: 250ms background-color;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #192B39;
+    color: white;
+}
+
+button:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.text-center{
+    text-align: center;
+}
+
+#stepProgressBar{
+    display: flex;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.step{
+    text-align: center;
+}
+
+.step-text{
+    margin-bottom: 10px;
+    color: #28a752;
+}
+
+.bullet{
+    height: 20;
+    width: 20px;
+    border-radius: 100%;
+    border: 1px solid black;
+    color: #28a752;
+    display: inline-block;
+    position: relative;
+    transition: background-color 500ms;
+    line-height: 20px;
+}
+
+.bullet.completed{
+    color: white;
+    background-color: #28a752;  
+}
+
+.bullet.completed::after{
+    content: "";
+    position: absolute;
+    width: 54px;
+    background-color: #28a752;
+    height: 1px;
+    right: -61px;
+    bottom: 10px;
+}
+
+h1 {
+    font-size: 2.8em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+footer{
+    color: white;
+}

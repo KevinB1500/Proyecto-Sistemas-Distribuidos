@@ -1,0 +1,66 @@
+.n-logo{
+    max-width: 195px;
+}
+.content-center {
+    margin-top: 3rem;
+}
+
+.search-container {
+    background-color: white;
+    border-radius: 15px;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-container:hover {
+    background-color: gray;
+}
+
+.btn {
+    color:black;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+}
+
+.btn:hover {
+    outline: none;
+}
+
+#search-bar {
+    width: 100%;
+    height: auto;
+    padding: 15px 10px 15px 10px;
+    border: none;
+    align-self: center;
+}
+
+#search-bar:focus {
+    outline: none;
+}
+
+img {
+    padding: 0;
+    width: 80%;
+    height: auto;
+}
+
+.restar-button{
+    font-size: 3rem;
+}
+
+h1 {
+    font-size: 2.8em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+footer{
+    color: white;
+}

@@ -1,0 +1,48 @@
+<div class="section text-center">
+    <div class="container">
+        <h2 id="nombre"> {{ cancha.nombre }}</h2>
+        <div class="row">
+            <div class="col-12">
+                <!--<div class="row justify-content-center">
+                    <h4>Información</h4>
+                </div>-->
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="row justify-content-center">
+                            <h4>Información</h4>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex w-100 justify-content-center">
+                            <h5 class="mb-1">Ubicación</h5>
+                        </div>
+                        <p id="direccion"> {{cancha.direccion}} </p>
+                        <small id="coordenadas"> {{ cancha.coordenadas }} </small>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex w-100 justify-content-center">
+                            <h5 class="mb-1">Precio</h5>
+                        </div>
+                        <p id="precio"> ${{ cancha.precio }} por hora. </p>
+                        <!--<small>grateche</small>-->
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex w-100 justify-content-center">
+                            <h5 class="mb-1"># Personas por equipo</h5>
+                        </div>
+                        <p>8 personas por equipo idealmente</p>
+                        <!--<small>buen teo</small>-->
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex w-100 justify-content-center">
+                            <h5 class="mb-1">Descripción</h5>
+                        </div>
+                        <p id="descripcion"> {{cancha.descripcion}} </p>
+                        <!--<small>Messirve</small>-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>

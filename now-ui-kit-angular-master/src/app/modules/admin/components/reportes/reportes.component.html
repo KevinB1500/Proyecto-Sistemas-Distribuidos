@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row justify-content-evenly">
+        <div class="col-md-4 col-12">
+            <button class="btn-g" (click)="toggleGraphic('bar')">Likes</button>
+        </div>
+        <div class="col-md-4 col-12">
+            <button class="btn-g" (click)="toggleGraphic('pie')">Zonas</button>
+        </div>
+        <div class="col-md-4 col-12">
+            <button class="btn-g" (click)="toggleGraphic('scatter')">Precio x Likes</button>
+        </div>
+    </div>
+</div>
+<div class="grafico">
+    <app-bar *ngIf="grafico === 'bar'"></app-bar>
+    <app-pie *ngIf="grafico === 'pie'"></app-pie>
+    <app-scatter *ngIf="grafico === 'scatter'"></app-scatter>
+</div>

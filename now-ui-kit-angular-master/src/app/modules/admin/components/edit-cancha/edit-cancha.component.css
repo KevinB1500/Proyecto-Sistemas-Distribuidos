@@ -1,0 +1,26 @@
+#contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-card {
+    width: fit-content;
+    max-width: 75%;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.comentario-card {
+    padding: 0 5px 0 5px;
+}
+
+@media screen and (max-width: 1000px) {
+    .edit-card {
+        width: 100%;
+        max-width: 100%;
+    }
+}

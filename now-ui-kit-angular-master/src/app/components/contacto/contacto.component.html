@@ -1,0 +1,174 @@
+<div class="wrapper">
+    <div class="page-header page-header-small">
+        <div class="page-header-image rellax-header" data-rellax-speed="-8" style="background-image: url('assets/img/soccer-bg2.jpg');">
+        </div>
+        <div class="container">
+            <div class="content-center">
+                <img class="n-logo" src="assets/img/now-logo.png" alt="">
+                <h1>Futfinder</h1>
+                <h3>Con la mente en el juego</h3>
+            </div>
+        </div>
+    </div>
+    <div class="section section-contact-us text-center">
+        <div class="container">
+          <form (ngSubmit)="contactForm(form.value)" #form="ngForm"> 
+            <h2 class="title">¿Tienes alguna duda?</h2>
+            <p class="description">Déjanos un mensaje y te contestaremos lo más pronto posible</p>
+            <div class="row justify-content-center">
+              <div class="col-md-1 align-text">
+                <h6>Nombre: </h6>
+              </div>
+              <div class="col-md-8">
+                <div class="form-group">
+                  <input type="text" name="Nombre" value="" placeholder="Nombre" class="form-control" ngModel/>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-1 align-text">
+                <h6>Género: </h6>
+              </div>
+              <div class="col-md-8">
+                <div class="form-group">
+                  <select name="Genero" id="genero" class="form-control" ngModel>
+                    <option value=""></option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-1 align-text">
+                <h6>Orígen: </h6>
+              </div>
+              <div class="col-md-8">
+                <div class="form-group">
+                  <select name="Origen" id="origen" class="form-control" ngModel>
+                    <option value=""></option>
+                    <option value="Guayaquil">Guayaquil</option>
+                    <option value="Quito">Quito</option>
+                    <option value="Cuenca">Cuenca</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-1 align-text">
+                <h6>Fec.nac.: </h6>
+              </div>
+              <div class="col-md-8">
+                <div class="form-group">
+                  <input type="date" name="Fecha" value="" placeholder="Fecha de nacimiento" class="form-control" ngModel/>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-1 align-text">
+                <h6>Celular: </h6>
+              </div>
+              <div class="col-md-8">
+                <div class="form-group">
+                  <input type="tel" name="Celular" value="" placeholder="Celular" class="form-control" ngModel/>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-1 align-text">
+                <h6>Correo: </h6>
+              </div>
+              <div class="col-md-8">
+                <div class="form-group">
+                  <input type="text" name="Correo" value="" placeholder="Correo" class="form-control" ngModel/>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-1 align-text">
+                <h6>Detalles: </h6>
+              </div>
+              <div class="col-md-8">
+                <div class="form-group">
+                  <textarea name="Detalles" class="form-control area-borders" rows="4" cols="80" placeholder="Escribe el mensaje..." ngModel></textarea>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-enviar" id="btnEnviar">Enviar</button>
+          </form>
+        </div>
+    </div>
+    
+    <!-- Stepper CSS -->
+    <div class="section section-contact-us text-center">
+      <div class="container">
+        <h2 class="title">Déjanos una sugerencia!</h2>
+        <div id="stepProgressBar">
+          <div class="step">
+            <p class="step-text">Step 1</p>
+            <div class="bullet">1</div>
+          </div>
+          <div class="step">
+            <p class="step-text">Step 2</p>
+            <div class="bullet">2</div>
+          </div>
+          <div class="step">
+            <p class="step-text">Step 3</p>
+            <div class="bullet">3</div>
+          </div>
+          <div class="step">
+            <p class="step-text">Step 4</p>
+            <div class="bullet">4</div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center suggest">
+          <div class="col-md-1 align-text">
+            <h6>Cancha: </h6>
+          </div>
+          <div class="col-md-8">
+            <div class="form-group">
+              <input type="text" id="canchafield" value="" placeholder="Ej: Jogos F.C." class="form-control cajaTexto"/>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center d-none suggest">
+          <div class="col-md-1 align-text">
+            <h6>Ubicación: </h6>
+          </div>
+          <div class="col-md-8">
+            <div class="form-group">
+              <input type="text" id="ubfield" value="" placeholder="Ej: Kennedy Norte, Av.Miguel H.Alcívar y Piedad Castillo, Guayaquil" class="form-control cajaTexto"/>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center d-none suggest">
+          <div class="col-md-1 align-text">
+            <h6>Detalles: </h6>
+          </div>
+          <div class="col-md-8">
+            <div class="form-group">
+              <textarea class="form-control area-borders cajaTexto" id="detfield" rows="4" cols="80" placeholder="Descripción breve (precio, tipo de cancha, seguridad, etc)"></textarea>
+            </div>
+          </div>
+        </div>
+        <h3 class="title d-none suggest">Gracias por tu colaboración!</h3>
+
+        <div id="main">
+          <p id="content">Step Number 1</p>
+          <div class="botones">
+            <button class="btn btn-primary btn-suggest" id="previous" disabled>Previuos</button>
+            <button class="btn btn-primary btn-suggest" id="next">Next</button>
+            <button class="btn btn-primary btn-suggest" id="finish" disabled>Finish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-light text-center text-lg-start">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-dark" href="/inicio">Futfinder</a>
+      </div>
+  </footer>
+</div>

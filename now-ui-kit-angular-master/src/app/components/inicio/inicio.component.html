@@ -1,0 +1,125 @@
+<div class="wrapper">
+    <div class="page-header clear-filter" filter-color="orange">
+        <div class="page-header-image rellax-header" data-rellax-speed="-7"
+            style="background-image: url('assets/img/soccer-bg2.jpg');">
+
+        </div>
+        <div class="container">
+            <div class="content-center brand">
+                <div class="row justify-content-center">
+                    <img class="n-logo" src="assets/img/now-logo.png" alt="">
+                </div>
+                <h1>Futfinder</h1>
+                <h3>Con la mente en el juego</h3>
+                <div class="row justify-content-center search-container">
+                    <div class="col-md-1 col-2 btn-container d-none d-sm-block">
+                        <button class="btn"><i class="bi bi-search fa-2x"></i></button>
+                    </div>
+                    <div class="col-md-11 col-10 d-sm-block d-none">
+                        <input id="search-bar" type="text" placeholder="¿Dónde quieres jugar hoy?">
+                    </div>
+                </div>
+                <div class="row cards-container">
+                    <div class="col-md-3 col-10 card-lugar d-none d-sm-block" *ngFor="let data of establecimientos">
+                        <div class="row justify-content-center">
+                            <h6 class="col-12">{{data.tipo}}</h6>
+                            <p class="col-12">{{data.descripcion}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="section">
+            <div class="container">
+                <div class="title">
+                    <h4>Canchas Más Votadas</h4>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <ngb-carousel  id="popular">
+                            <ng-template *ngFor="let datos of canchasPopular" ngbSlide>
+                                <a href="canchas/{{datos.id}}">
+                                    <img class="d-block" src="{{datos.url}}" alt="">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>{{datos.nombre}}</h5>
+                                    </div>
+                                </a>
+                            </ng-template>
+                        </ngb-carousel>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="title">
+                    <h4>Canchas Del Norte</h4>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <ngb-carousel id="norte">
+                            <ng-template *ngFor="let datos of canchasNorte" ngbSlide>
+                                <a href="canchas/{{datos.id}}">
+                                    <img class="d-block" src="{{datos.url}}" alt="">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>{{datos.nombre}}</h5>
+                                    </div>
+                                </a>
+                            </ng-template>
+                        </ngb-carousel>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="title">
+                    <h4>Canchas Del Sur</h4>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <ngb-carousel id="sur">
+                            <ng-template *ngFor="let datos of canchasSur" ngbSlide>
+                                <a href="canchas/{{datos.id}}">
+                                    <img class="d-block" src="{{datos.url}}" alt="">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>{{datos.nombre}}</h5>
+                                    </div>
+                                </a>
+                            </ng-template>
+                        </ngb-carousel>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="title">
+                    <h4>Canchas Del Centro</h4>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <ngb-carousel id="centro">
+                            <ng-template *ngFor="let datos of canchasCentro" ngbSlide>
+                                <a href="canchas/{{datos.id}}">
+                                    <img class="d-block" src="{{datos.url}}" alt="">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>{{datos.nombre}}</h5>
+                                    </div>
+                                </a>
+                            </ng-template>
+                        </ngb-carousel>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright:
+          <a class="text-dark" href="/inicio">Futfinder</a>
+        </div>
+    </footer>
+</div>

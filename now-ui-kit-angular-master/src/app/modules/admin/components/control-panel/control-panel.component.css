@@ -1,0 +1,17 @@
+.table-container {
+    padding: 1rem;
+}
+
+.btn-add {
+    background-color: #241910;
+    font-size: 100%;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+}
