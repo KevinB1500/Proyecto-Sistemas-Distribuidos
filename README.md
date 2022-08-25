@@ -1,5 +1,5 @@
 # Proyecto-Sistemas-Distribuidos
-#Integrantes:
-#Kevin Bautista
-#Alejandra Quimi
-#Luis Macias
+# Integrantes
+## Kevin Bautista
+## Alejandra Quimi
+## Luis Macias
